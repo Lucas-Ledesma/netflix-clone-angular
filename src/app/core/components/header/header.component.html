@@ -1,0 +1,13 @@
+<header class="h-[60px] z-10 dark:bg-black sticky top-0 flex">
+  <div class="flex gap-5">
+    <img width="110" src="/assets/pngwing.com.png" alt="netflix-logo" />
+    <ul class="flex items-center gap-5">
+      @for (item of navList; track $index) {
+      <li class="cursor-pointer text-sm font-extralight" :key="index">
+        {{ item }}
+      </li>
+      }
+    </ul>
+  </div>
+  <div></div>
+</header>
